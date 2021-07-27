@@ -3,8 +3,8 @@ FROM python:3.8
 # WORKDIR /code
 # COPY ./my_flask /code
 
-COPY *.py /code
-COPY requirements.txt /code
+COPY ./*.py /code
+COPY ./requirements.txt /code
 
 RUN pip install -r /code/requirements.txt
 
